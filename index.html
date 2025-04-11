@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Blue Ridge University" />
+    <meta name="author" content="Olha Mykytka" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Updated Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.min.css" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <title>Home • Blue Ridge University</title>
+  </head>
+  <body>
+    <div id="headerWrapper">
+      <header>
+        <div class="logo">
+          <img src="images/logo.svg" alt="logo" width="40" height="40" />
+          <h1>Blue Ridge University</h1>
+        </div>
+        <div id="ham"><a href="#closex">&#9776;</a></div>
+        <div class="phone"><a href="tel:+934000000">9340000000</a></div>
+      </header>
+    </div>
+    <div id="navWrapper">
+      <div id="closex"><a href="#ham">x</a></div>
+      <nav>
+        <a class="active" href="#">Apply</a>
+        <a href="#">For Students</a>
+        <a href="#">Academics</a>
+        <a href="#">Tuition</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+    <div id="mainWrapper">
+      <main>
+        <h2>Apply</h2>
+
+        <form method="get" action="thanks.html" class="applyForm" autocomplete="on">
+          <h3>Personal Info</h3>
+
+          <label for="fname">First Name<span class="astrisk">*</span>
+            <input type="text" name="fname" id="fname" autocomplete="given-name" placeholder="Olha" required autofocus />
+          </label>
+
+          <label for="lname">Last Name<span class="astrisk">*</span>
+            <input type="text" name="lname" id="lname" autocomplete="family-name" placeholder="Mykytka" title="Last Name" required />
+          </label>
+
+          <label for="email">Email<span class="astrisk">*</span>
+            <input type="email" name="email" id="email" autocomplete="email" placeholder="student@example.com" title="Your Email" required />
+          </label>
+
+          <label for="tel">Phone Number<span class="astrisk">*</span>
+            <input type="tel" name="tel" id="tel" autocomplete="tel" placeholder="877CASHNOW" title="Phone Number" required />
+          </label>
+
+          <label for="street">Address
+            <input type="text" name="address" id="address" autocomplete="street-address" placeholder="91 Jordan Rd." title="Street Address" />
+          </label>
+
+          <label for="city">City
+            <input type="text" name="city" id="city" autocomplete="address-level2" placeholder="Franklin" title="City" />
+          </label>
+
+          <label for="state">State
+            <input type="text" name="state" id="state" autocomplete="address-level1" placeholder="UT" title="State" />
+          </label>
+
+          <label for="zip">Zip Code
+            <input type="number" name="zip" id="zip" placeholder="84058" title="Zip Code" />
+          </label>
+
+          <h3>Education Completed</h3>
+          <p>Tell us about your completed education.</p>
+
+          <label for="prev">
+            Previous School
+            <select name="prev" id="prev">
+              <option value="no selection made">Please choose a school</option>
+              <option value="uvu">UVU</option>
+              <option value="byu">BYU</option>
+              <option value="slcc">SLCC</option>
+            </select>
+          </label>
+
+          <label for="grad">Graduation Date
+            <input type="date" name="grad" id="grad" title="Graduation Date" />
+          </label>
+
+          <p class="label">Education Completed</p>
+          <label><input type="checkbox" name="comp" value="some-hs" /> Some High School</label>
+          <label><input type="checkbox" name="comp" value="hs" /> High School Diploma</label>
+          <label><input type="checkbox" name="comp" value="some-c" /> Some College</label>
+          <label><input type="checkbox" name="comp" value="asso-degree" /> Associate Degree</label>
+          <label><input type="checkbox" name="comp" value="bach-degree" /> Bachelor's Degree</label>
+
+          <h3>Communication Preferences</h3>
+          <label><input type="radio" name="comm" value="in-person" /> In-person</label>
+          <label><input type="radio" name="comm" value="phone" /> Phone</label>
+          <label><input type="radio" name="comm" value="text" /> Text</label>
+          <label><input type="radio" name="comm" value="email" /> Email</label>
+          <label><input type="radio" name="comm" value="paper" /> Paper Mail</label>
+
+          <label for="userName">User Name (5–10 letters)<span class="asterisk">*</span>
+            <input type="text" name="userName" pattern="[A-Za-z]{5,10}" id="userName" title="User Name 5-10 letters" required />
+          </label>
+
+          <label for="pw">Password (6 or more)<span class="asterisk">*</span>
+            <input type="password" name="pw" id="pw" required minlength="6" title="Password 6+ chars" />
+          </label>
+
+          <input type="submit" value="Apply to BRU" />
+        </form>
+      </main>
+    </div>
+
+    <div id="footerWrapper">
+      <footer>
+        <p>© <span id="year">2025</span> • Olha Mykytka</p>
+      </footer>
+    </div>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
