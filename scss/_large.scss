@@ -1,6 +1,18 @@
-header, nav, main {
-    max-width: 960px;
+header, nav, main, footer {
+    max-width: 60rem;
     margin: auto;
+  }
+  
+nav {
+  height: auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
-
-/* NAVIGATION STUFF GOES HERE  */
+  nav a {
+    flex-basis: 19%;
+    text-align: right;
+    padding: .2rem 1rem;
+    border-radius: 10px;
+  }
+  

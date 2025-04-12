@@ -1,1 +1,56 @@
 /* NAVIGATION STUFF GOES HERE  */
+header {
+    padding: 2rem $gutter;
+    h1 {
+      font-size: 2rem;
+    }
+    .phone {
+      display: block;
+      justify-self: end;
+      a {
+          color: $fontColor;
+  text-decoration: none;
+  font-weight: $boldWeight;
+  font-size: 1.5rem;
+  &:hover {
+      color: white;
+  }
+      }
+    }
+  }
+  #navWrapper {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    padding: 0 $gutter;
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+  
+      a {
+        color: $fontColor;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+  
+        &:hover {
+          color: $accentColor;
+        }
+  
+        &.active {
+          border-bottom: 2px solid $accentColor;
+          padding-bottom: 0.2rem;
+        }
+      }
+    }
+  
+    #closex {
+      display: none;
+    }
+  }
+  #ham {
+    display: none;
+  }
